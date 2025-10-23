@@ -9,7 +9,7 @@ template <typename T>
 void iter(T *array, std::size_t arr_len, void (*f)(T &))
 {
     if (!array || !f)
-        return;
+        return ;
     for (std::size_t i = 0; i < arr_len; ++i)
 	{
         f(array[i]);
@@ -21,7 +21,7 @@ template <typename T>
 void iter(T *array, std::size_t arr_len, void (*f)(T const &))
 {
     if (!array || !f)
-        return;
+        return ;
     for (std::size_t i = 0; i < arr_len; ++i)
 	{
         f(array[i]);
